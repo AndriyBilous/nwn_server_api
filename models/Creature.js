@@ -10,10 +10,10 @@ const CreatureSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  locations: [
+  location: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Locations",
+      ref: "locations",
     },
   ],
 });
